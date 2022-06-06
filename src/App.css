@@ -1,38 +1,229 @@
-.App {
-  text-align: center;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container1{
+background-color: black;
+color: #fff;
+height: 100vh;
+}
+img{
+/* mask-image: rgb(167, 27, 167); */
+width: 100%;
+overflow: hidden;
+filter: opacity(0.5) drop-shadow(0 0 0 purple);
+/* opacity: var(--purple); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h2{
+  font-size: 15px;
+}
+
+h2 strong {
+  color: purple;
+}
+
+h5{
+  font-size: 8px;
+  color:darkgray;
+}
+
+h1{
+  font-size: 9px;
+}
+
+h4{
+  font-size: 5px;
+  color: darkgray;
+  text-transform: uppercase;
+}
+/*%%%%%%%%%%%%%% MOBILE DEVICE %%%%%%%%%%*/
+@media screen and (max-width: 800px) {
+
+  .container1{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+
+  }
+
+  img{
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+        
+  }
+
+  .container2{
+    position: relative ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(46, 33, 71);
+    border-radius: 10px;
+    align-items:center;
+    text-align: center;
+  } 
+  h5 {
+    text-align: center;
+    padding: 5px;
+    text-align: center;
+  }
+
+  h2{
+    padding-bottom: 10px;
+  }
+
+  .companies{
+    margin-bottom: 20px;
+  }
+  .templates{
+    margin-bottom: 20px;
+  }
+
+  .quaries{
+    margin-bottom: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*%%%%%%%%%%%%%% MEDUIM DEVICE %%%%%%%%%%*/
+@media screen and (min-width: 801px) {
+  .container1{
+    padding: 70px;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .container2{
+    position: relative ;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    background-color: rgb(46, 33, 71);
+    border-radius: 10px;
+    align-items:center;
+    text-align: center;
+    width:85%;
+  } 
+
+  img{
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+      
+  }
+  .continuation{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .achievements{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  
+   h5{
+    font-size: 10px;
+    padding: 18px;
+    text-align: start;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  h1{
+    font-size: 10px;
+  }
+
+  h4{
+    font-size: 6px;
+  } 
+
+  .container2{
+    border-radius: 5px;  
+  }
+
+}
+/*%%%%%%%%%%%%%% LARGE DEVICE %%%%%%%%%%*/
+@media screen and (min-width: 920px) {
+  .container1{
+    padding: 5%;
+    margin: 0 auto;
+    height: 100vh;
+    
+  }
+
+  .container2{
+    position: relative ;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    background-color: rgb(46, 33, 71);
+    border-radius: 10px;
+    align-items:center;
+    text-align: center;
+    
+  } 
+
+  img{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+      
+  }
+  .continuation{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .achievements{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .container2{
+    border-radius: 5px;  
+  }
+
+  h5{
+    font-size: 13px;
+    padding: 18px;
+    text-align: start;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  h1{
+    font-size: 13px;
+  }
+
+  h4{
+    font-size: 8px;
+  } 
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
