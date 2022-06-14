@@ -13,7 +13,7 @@ function App() {
 
         <div className="content_section">
           <h2>Get <strong>insights</strong> that help your business grow.</h2>
-          <h4>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</h4>
+          <h4>Discover the benefits of data analytics and make <br/>better decisions regarding revenue, customer <br/>experience, and overall efficiency.</h4>
         </div>
 
         
